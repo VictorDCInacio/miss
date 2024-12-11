@@ -1,0 +1,158 @@
+/* Reseta as margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhamento para que o conteúdo fique mais próximo do topo */
+    height: 100vh;
+    color: #333;
+    padding: 20px; /* Adiciona um espaço entre a borda da tela e o conteúdo */
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    height: auto; /* Garante que o tamanho seja dinâmico, sem ocupar o total da altura */
+    
+    margin-top: 20px; /* Adiciona um espaço no topo */
+    margin-bottom: 20px; /* Adiciona um espaço na parte inferior do formulário */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+  
+  .nota-container {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .jurado-title {
+    font-size: 1.3rem;
+    color: #2196F3;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .btn-submit, .btn-toggle {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover, .btn-toggle:hover {
+    background-color: #45a049;
+  }
+  
+  #toggle-ranking {
+    background-color: #2196F3;
+    margin-top: 15px;
+  }
+  
+  #toggle-ranking:hover {
+    background-color: #1976D2;
+  }
+  
+  #ranking {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 20px; /* Adicionado gap no ranking */
+  }
+  
+  .ranking-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .ranking-item span {
+    flex-grow: 1;
+    font-size: 1.1rem;
+  }
+  
+  .excluir-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .excluir-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  #mensagem {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  footer {
+    margin-top: 30px; /* Garantindo que haja um espaço entre o conteúdo e o fundo */
+  }
+  
